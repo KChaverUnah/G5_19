@@ -6,8 +6,9 @@
             try {
                 $conectar = $this->dbh = new PDO("mysql:host=20.216.41.245;dbname=g5_19","G5_19","op7wDCVP");
                 return $conectar;
+            
             } catch (Exception $e) {
-                print "!Error BD!: " . $e->getMessage() . "<br/>";
+                print "Error BD!: " . $e->getMessage() . "<br/>";
                 die();
             }
         }
